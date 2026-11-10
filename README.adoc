@@ -4,12 +4,9 @@ smart-cap is a small Groovy and Java library for capitalizing Italian
 business names and addresses. It handles abbreviations, company types,
 prepositions, Roman numerals, and URLs.
 
-This fork of https://github.com/grational/smart-cap[grational/smart-cap]
-adds JitPack publication and a `groovy-4` compatibility branch.
-
 == Installation
 
-Use JitPack and replace `VERSION` with a published tag or commit from this fork.
+Use JitPack and replace `VERSION` with a published tag or commit from this repository.
 
 *Gradle*
 
@@ -21,7 +18,7 @@ repositories {
 }
 
 dependencies {
-	implementation 'com.github.domen5:smart-cap:VERSION'
+	implementation 'com.github.grational:smart-cap:VERSION'
 }
 ----
 
@@ -37,7 +34,7 @@ dependencies {
 </repositories>
 
 <dependency>
-	<groupId>com.github.domen5</groupId>
+	<groupId>com.github.grational</groupId>
 	<artifactId>smart-cap</artifactId>
 	<version>VERSION</version>
 </dependency>
@@ -89,7 +86,7 @@ tests and Java caller checks on Java 25 with both Groovy 4.0.30 and 5.0.6.
 
 == Local Development
 
-Select JDK 17 with SDKMAN, then run:
+Use JDK 17, then run:
 
 [source,bash]
 ----
@@ -101,7 +98,5 @@ JitPack runs the build and tests before publishing.
 
 == Release
 
-After checks pass, commit on `groovy-4`, tag the release as
-`release-1.12.4-g4`, and push the branch and tag. Verify that the tagged JAR
-and POM resolve through JitPack before using that version. Keep existing
-upstream release tags unchanged.
+After checks pass, tag the release and push the branch and tag. Verify that
+the tagged JAR and POM resolve through JitPack before using that version.
