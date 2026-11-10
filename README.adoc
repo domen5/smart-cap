@@ -81,7 +81,7 @@ always preserves the input; `1` preserves only exact matches.
 == Compatibility
 
 The `groovy-4` branch builds with JDK 17, targets Java 8 bytecode, and declares
-Groovy 4.0.30 as a runtime dependency. The same published JAR passes all 218
+Groovy 4.0.30 as a runtime dependency. The same published JAR passes all
 tests and Java caller checks on Java 25 with both Groovy 4.0.30 and 5.0.6.
 
 == Local Development
